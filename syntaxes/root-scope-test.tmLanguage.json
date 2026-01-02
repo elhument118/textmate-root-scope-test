@@ -1,1 +1,31 @@
-
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Root Scope Test",
+  "scopeName": "source.root-test",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#constant" },
+    { "include": "#entity" },
+    { "include": "#keyword" },
+    { "include": "#storage" },
+    { "include": "#string" },
+    { "include": "#support" },
+    { "include": "#variable" },
+    { "include": "#punctuation" },
+    { "include": "#markup" },
+    { "include": "#meta" }
+  ],
+  "repository": {
+    "comment": { "patterns": [{ "name": "comment.line.test", "match": "\\bCOMMENT_TEST\\b" }] },
+    "constant": { "patterns": [{ "name": "constant.numeric.test", "match": "\\bCONSTANT_TEST\\b" }] },
+    "entity": { "patterns": [{ "name": "entity.name.type.test", "match": "\\bENTITY_TEST\\b" }] },
+    "keyword": { "patterns": [{ "name": "keyword.control.test", "match": "\\bKEYWORD_TEST\\b" }] },
+    "storage": { "patterns": [{ "name": "storage.type.test", "match": "\\bSTORAGE_TEST\\b" }] },
+    "string": { "patterns": [{ "name": "string.quoted.test", "match": "\"STRING_TEST\"" }] },
+    "support": { "patterns": [{ "name": "support.function.test", "match": "\\bSUPPORT_TEST\\b" }] },
+    "variable": { "patterns": [{ "name": "variable.other.test", "match": "\\bVARIABLE_TEST\\b" }] },
+    "punctuation": { "patterns": [{ "name": "punctuation.separator.test", "match": "\\bPUNCTUATION_TEST\\b" }] },
+    "markup": { "patterns": [{ "name": "markup.bold.test", "match": "\\bMARKUP_TEST\\b" }] },
+    "meta": { "patterns": [{ "name": "meta.structure.test", "match": "\\bMETA_TEST\\b" }] }
+  }
+}
